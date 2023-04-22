@@ -1,0 +1,865 @@
+/* typography */
+.typo-grid {
+    margin-bottom: 3em;
+    padding: 2em 3em;
+    background: #eee;
+}
+
+.typo-grid h4 {
+    color: #000;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+/* //typography */
+h4 {
+    text-align: center;
+    margin: 30px 0px;
+    color: #444;
+}
+
+.mt-10 {
+    margin-top: 20px;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+#accordion .panel {
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+#accordion .panel-heading {
+    padding: 0;
+    border: none;
+    border-radius: 3px;
+}
+
+#accordion .panel-title a {
+    display: block;
+    padding: 12px 15px;
+    background: #fff;
+    ;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ff1949;
+    /*border: 1px solid #ececec;*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+    position: relative;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0 1px 2px rgba(43, 59, 93, 0.30);
+}
+
+#accordion .panel-title a.collapsed {
+    box-shadow: none;
+    color: #676767;
+    box-shadow: 0 1px 2px rgba(43, 59, 93, 0.30);
+}
+
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before {
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    width: 25px;
+    height: 25px;
+    line-height: 28px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #ff1949;
+    text-align: center;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    transform: rotate(135deg);
+    transition: all 0.3s ease 0s;
+}
+
+#accordion .panel-title a.collapsed:before {
+    color: #676767;
+    transform: rotate(0);
+}
+
+#accordion .panel-title a:after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #ececec;
+    position: absolute;
+    top: 0;
+    right: 55px;
+}
+
+#accordion .panel-body {
+    padding: 0px 15px;
+    border: none;
+    font-size: 15px;
+    color: #615f5f;
+    line-height: 27px;
+}
+
+/******************* Accordion Demo - 2 *****************/
+#accordion2 .panel-title a {
+    display: block;
+    padding: 12px 15px 12px 50px;
+    background: linear-gradient(to bottom, #fefefe, #cdcdcd);
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #676767;
+    text-shadow: 1px 1px 1px #fff;
+    ;
+    position: relative;
+}
+
+#accordion2 .panel-title a:before {
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    background: #929191;
+    font-size: 12px;
+    font-weight: 900;
+    color: #fdfbfb;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: none;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+}
+
+#accordion2 .panel-title a.collapsed:before {
+    content: "\f067";
+}
+
+#accordion2 .panel-body {
+    padding: 0px 15px;
+    font-size: 15px;
+    color: #222;
+    line-height: 27px;
+    border: none;
+}
+
+#accordion2 .panel-body p {
+    margin-bottom: 0;
+}
+
+/******************* Accordion Demo - 3 *****************/
+#accordion3 {
+    padding-left: 80px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#accordion3:before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background: #ff1949;
+    ;
+    position: absolute;
+    top: 0;
+    left: 22px;
+    z-index: -1;
+}
+
+#accordion3 .panel-title a {
+    display: block;
+    padding: 10px 30px 15px 0;
+    background: #fff;
+    ;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff1949;
+    ;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0 1px 2px rgba(43, 59, 93, 0.30);
+}
+
+#accordion3 .panel-title a:before {
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    ;
+    text-align: center;
+    font-size: 17px;
+    color: #ff1949;
+    ;
+    border: 6px solid #ff1949;
+    ;
+    position: absolute;
+    top: 0;
+    left: -80px;
+}
+
+#accordion3 .panel-title a.collapsed:before {
+    content: "\f067";
+    background: #fff;
+    ;
+}
+
+#accordion3 .panel-body {
+    padding: 15px;
+    background: #eee;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) inset, 0 1px 2px rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    color: #487677;
+    line-height: 25px;
+}
+
+/******************* Accordion Demo - 4 *****************/
+#accordion4 .panel {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 0 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#accordion4 .panel-heading {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+}
+
+#accordion4 .panel-heading:before,
+#accordion4 .panel-heading:after {
+    content: "";
+    width: 50%;
+    height: 20%;
+    box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    transform: rotate(-3deg);
+    z-index: -1;
+}
+
+#accordion4 .panel-heading:after {
+    left: auto;
+    right: 10px;
+    transform: rotate(3deg);
+}
+
+h4.panel-title {
+    margin: 10px 0px !important;
+}
+
+#accordion4 .panel-title a {
+    display: block;
+    padding: 15px 70px 15px 70px;
+    margin: 0;
+    background: #fff;
+    ;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #d11149;
+    border-radius: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+}
+
+#accordion4 .panel-title a:before,
+#accordion4 .panel-title a.collapsed:before {
+    content: "\f106";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 55px;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    border-left: 2px solid #D11149;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#accordion4 .panel-title a.collapsed:before {
+    content: "\f107";
+}
+
+#accordion4 .panel-title a .icon {
+    display: inline-block;
+    width: 55px;
+    height: 100%;
+    border-right: 2px solid #d11149;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#accordion4 .panel-body {
+    padding: 10px 15px;
+    margin: 0 0 20px;
+    border-bottom: 3px solid #d11149;
+    border-top: none;
+    background: #fff;
+    ;
+    font-size: 15px;
+    color: #333;
+    line-height: 27px;
+}
+
+/******************* Accordion Demo - 5 *****************/
+#accordion5 .panel {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 0 15px 50px;
+}
+
+#accordion5 .panel-title a {
+    display: block;
+    padding: 10px 20px 10px 60px;
+    background: #ff1949;
+    border-radius: 30px;
+    border: 2px solid #ff1949;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    ;
+    position: relative;
+}
+
+#accordion5 .panel-title a.collapsed {
+    border: 2px solid #bbb;
+    background: #fff;
+    ;
+    color: #bbb;
+}
+
+#accordion5 .panel-title a:before,
+#accordion5 .panel-title a.collapsed:before {
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background: #ff1949;
+    ;
+    font-size: 18px;
+    color: #fff;
+    ;
+    text-align: center;
+    border-right: 3px solid #fff;
+    ;
+    position: absolute;
+    top: -10px;
+    left: -30px;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+
+#accordion5 .panel-title a.collapsed:before {
+    content: "\f067";
+    background: #bbb;
+    border: none;
+}
+
+#accordion5 .panel-body {
+    padding: 10px 15px 0;
+    margin: 0 0 0 30px;
+    border: none;
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+    position: relative;
+}
+
+#accordion5 .panel-body:before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 90%;
+    background: #ff1949;
+    ;
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
+#accordion5 .panel-body:after {
+    content: "";
+    border-top: 20px solid #ff1949;
+    ;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: -48px;
+}
+
+/******************* Accordion Demo - 6 *****************/
+#accordion6 .panel {
+    border: 1px solid #ff1949;
+    border-radius: 0;
+    box-shadow: none;
+    margin-left: 50px;
+    margin-bottom: 12px;
+}
+
+#accordion6 .panel-heading {
+    padding: 0;
+    background: #fff;
+    ;
+    position: relative;
+}
+
+#accordion6 .panel-heading:before,
+#accordion6 .panel-heading:after {
+    content: "";
+    border-right: 8px solid #ff1949;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    position: absolute;
+    top: 12px;
+    left: -9px;
+}
+
+#accordion6 .panel-heading:after {
+    border-right: 7px solid #fff;
+    ;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    position: absolute;
+    top: 13px;
+    left: -6px;
+}
+
+#accordion6 .panel-title a {
+    display: block;
+    padding: 3px 20px 3px 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ff1949;
+    position: relative;
+    background: #f1f1f2;
+}
+
+#accordion6 .panel-title a:before,
+#accordion6 .panel-title a.collapsed:before {
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    color: #ff1949;
+    text-align: center;
+    border: 1px solid #ff1949;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    transition: all 0.5s ease 0s;
+}
+
+#accordion6 .panel-title a.collapsed:before {
+    content: "\f067";
+}
+
+#accordion6 .panel-body {
+    padding: 0 15px 15px;
+    border: none;
+    font-size: 14px;
+    color: #807e7e;
+    line-height: 28px;
+}
+
+#accordion6 .panel-body p {
+    margin-bottom: 0;
+}
+
+/******************* Accordion Demo - 7 *****************/
+#accordion7 {
+    padding-right: 24px;
+    padding-left: 24px;
+    z-index: 1;
+}
+
+#accordion7 .panel {
+    border: none;
+    box-shadow: none;
+}
+
+#accordion7 .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+}
+
+#accordion7 .panel-title {
+    padding: 0;
+}
+
+#accordion7 .panel-title a {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    background: #02b3e4;
+    color: #fff;
+    padding: 15px 25px;
+    position: relative;
+    margin-left: -24px;
+    transition: all 0.3s ease 0s;
+}
+
+#accordion7 .panel-title a.collapsed {
+    background: #fff;
+    color: #ff1949;
+    margin-left: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#accordion7 .panel-title a:before {
+    content: "";
+    border-left: 24px solid #02b3e4;
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -24px;
+    transition: all 0.3s ease 0s;
+}
+
+#accordion7 .panel-title a.collapsed:before {
+    border-left-color: #fff;
+}
+
+#accordion7 .panel-title a:after {
+    content: "\f106";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 30%;
+    right: 15px;
+    font-size: 18px;
+    color: #fff;
+}
+
+#accordion7 .panel-title a.collapsed:after {
+    content: "\f107";
+    color: #ff1949;
+}
+
+#accordion7 .panel-collapse {
+    position: relative;
+}
+
+#accordion7 .panel-collapse.in:before {
+    content: "";
+    border-right: 24px solid #fff;
+    border-bottom: 18px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -24px;
+}
+
+#accordion7 .panel-body {
+    font-size: 14px;
+    color: #333;
+    background: #e4e4e4;
+    border-top: none;
+    z-index: 1;
+}
+
+/******************* Accordion Demo - 8 *****************/
+#accordion8 .panel {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+
+#accordion8 .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+}
+
+#accordion8 .panel-title a {
+    display: block;
+    padding: 20px 30px 20px 50px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    color: #02ccba;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    border: 1px solid #02ccba;
+    border-radius: 5px;
+}
+
+#accordion8 .panel-title a.collapsed {
+    background: #fff;
+    ;
+    color: #696969;
+    border: 1px solid #20457c;
+    border-radius: 5px;
+}
+
+#accordion8 .panel-title a:after,
+#accordion8 .panel-title a.collapsed:after {
+    content: "\f106";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    ;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: -13px;
+    background: #ff1949;
+}
+
+#accordion8 .panel-title a.collapsed:after {
+    content: "\f107";
+    background: #e94c6f;
+}
+
+#accordion8 .panel-title a.collapsed:hover {
+    background: #f1f1f1;
+    color: #20457c;
+}
+
+#accordion8 .panel-body {
+    font-size: 14px;
+    color: #fff;
+    ;
+    line-height: 25px;
+    background: #fff;
+    padding: 15px;
+    border: none;
+    transition: all 0.5s ease 0s;
+}
+
+/******************* Accordion Demo - 9 *****************/
+#accordion9 .panel {
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+
+#accordion9 .panel-heading {
+    padding: 0;
+}
+
+#accordion9 .panel-title {
+    position: relative;
+}
+
+#accordion9 .panel-title:before {
+    content: "";
+    border-bottom: 25px solid rgba(0, 0, 0, 0);
+    border-left: 15px solid #ccc;
+    border-top: 23px solid rgba(0, 0, 0, 0);
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 34px;
+}
+
+#accordion9 .panel-title a {
+    color: #fff;
+    ;
+    background: #ff1949;
+    display: block;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 13px 10px 13px 65px;
+}
+
+#accordion9 .panel-title a.collapsed {
+    color: #5b5656;
+    background: #fff;
+    ;
+}
+
+#accordion9 .panel-title a:before,
+#accordion9 .panel-title a.collapsed:before {
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 14px 10px;
+    color: #ff1949;
+    background: #ccc;
+}
+
+#accordion9 .panel-title a.collapsed:before {
+    content: "\f067";
+}
+
+#accordion9 .panel-body {
+    color: #828282;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/******************* Accordion Demo - 10 *****************/
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+#accordion10 .panel {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 30px 10px 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+#accordion10 .panel-heading {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    position: relative;
+}
+
+#accordion10 .panel-title a {
+    display: block;
+    padding: 15px 20px;
+    margin: 0;
+    background: #02b3e4;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    ;
+    border-radius: 0;
+    position: relative;
+}
+
+#accordion10 .panel-title a.collapsed {
+    background: #1c2336;
+}
+
+#accordion10 .panel-body {
+    border-top: none;
+    background: #fff;
+    font-size: 15px;
+    color: #1c2336;
+    line-height: 27px;
+    padding: 10px;
+    position: relative;
+}
+
+#tabs {
+    background: #007b5e;
+    color: #eee;
+}
+
+#tabs h6.section-title {
+    color: #eee;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid !important;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #eee;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1024px) {
+    .typo-grid h4 {
+        color: #000;
+        font-size: 1.1em;
+    }
+
+    #accordion6 .panel-title a,
+    #accordion .panel-title a,
+    #accordion2 .panel-title a,
+    #accordion3 .panel-title a,
+    #accordion4 .panel-title a,
+    #accordion5 .panel-title a,
+    #accordion10 .panel-title a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    h4.panel-title {
+        margin: 6px 0px !important;
+    }
+}
+
+@media screen and (max-width:568px) {
+    #accordion3 .panel-title a:before {
+        width: 40px;
+        height: 40px;
+        line-height: 30px;
+        left: -77px;
+    }
+
+    #accordion5 .panel-title a:before,
+    #accordion5 .panel-title a.collapsed:before {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        top: 2px;
+    }
+    .typo-grid h4 {
+        margin-bottom: 1em;
+    }
+    .typo-grid {
+        margin-bottom: 2em;
+    }
+    .typo-grid {
+        padding: 2em 1em;
+    }
+}
